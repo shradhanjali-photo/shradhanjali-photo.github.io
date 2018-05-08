@@ -31,7 +31,7 @@
 			html2canvas($("#widget")	, {
 		onrendered: function(canvas) {
 		  var img = canvas.toDataURL("image/png");
-		  alert(img);
+		  
 		  $('body').append('<img id="hr_canvas_img" src="'+img+'"/>');
 		  var $this = $('#hr_canvas_img');
 			$this.wrap('<a href="' + $this.attr('src') + '" download/>');
