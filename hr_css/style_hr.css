@@ -11,6 +11,10 @@
 
   }
 
+  img#hr_canvas_img {
+    display: none;
+}
+
   .widget {
       display: inline-block;
       background-color: white;
