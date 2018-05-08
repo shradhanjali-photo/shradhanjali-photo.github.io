@@ -1,0 +1,244 @@
+  body {
+      font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+  }
+
+  .dataset {
+      float: left;
+      vertical-align: top;
+
+
+  }
+
+  .widget {
+      display: inline-block;
+      background-color: white;
+      /*font-size: 14px !important;*/
+      line-height: 20px !important;
+
+      margin: 5px;
+      vertical-align: top;
+      color: #333;
+
+      border-radius: 5px;
+      margin: 10px;
+      padding-bottom: 20px;
+      border: 1px solid lightgray;
+
+
+      border-radius:5px;
+      -webkit-border-radius: 5px;
+
+
+      display: inline-block;
+      page-break-after: always;
+
+  }
+
+
+
+  .cell.glyph {
+      vertical-align: middle;
+      width: 100px;
+  }
+
+
+  .element {
+
+  }
+  .element table {
+      table-layout: fixed;
+      width: 100%;
+  }
+
+  .element td {
+      padding: 0px;
+
+  }
+
+  .element .selectable:hover {
+      background-color: #f4f4f4;
+  }
+
+
+  .element .stat {
+      text-align: right;
+      padding-right: 20px;
+      font-weigth: bold;
+      color: darkgray;
+  }
+
+
+
+  .element .bar {
+      height: 18px;
+      display: inline-block;
+      float: left;
+  }
+  .bar-both {
+      background-color: #0a67a3 !important;
+
+  }
+
+  .bar-fg {
+      background-color: #3e97d1 !important;
+  }
+
+  .bar-bg {
+      background-color: #ddd !important;
+  }
+
+  .selected .bar-fg {
+      background-color: #FC0;
+  }
+
+  .selected .bar-both  {
+      background-color:#FA0;
+  }
+
+  tr.selected {
+      background-color: #eee;
+  }
+
+  .crosstab .selectable:hover {
+      background-color: #f4f4f4;
+  }
+
+  .crosstab tr.selected {
+      background-color: #eee;
+  }
+
+  .crosstab .header p {
+      max-width: 600px;
+  }
+
+
+  .crosstab td {
+    padding: 0 5px 0 5px;
+    text-align: right;
+  }
+
+  .crosstab td.value {
+    min-width: 60px;
+    max-width: 240px;
+    text-align: left;
+  }
+
+  .crosstab .cell {
+      vertical-align: top;
+  }
+
+
+
+  .crosstab th.cell {
+      max-width: 120px;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+      text-align: right;
+      padding-right: 10px;
+      vertical-align: bottom;
+  }
+
+  .crosstab .n {
+      color: darkgray;
+  }
+  .fieldlist {
+  }
+
+  .constraints {
+      min-width:300px;
+      padding: 10px;
+
+      border-radius:5px;
+      -webkit-border-radius: 5px;
+
+
+  }
+  .constraints table {
+      width: 100%;
+
+  }
+
+  .sidenote {
+    max-width:300px;
+    padding: 0 10px 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .headnote {
+      max-width: 600px;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+  }
+
+  .info-block {
+      /*border: 1px solid lightgrey;*/
+      background-color: #eee;
+      vertical-align: top;
+      margin: 10px;
+      padding: 10px;
+      display: block;
+
+      /*box-shadow: 0 0 0 0px #9bc0cf, 0 0 0 3px #e0ebf0;*/
+  }
+
+ 
+ 
+ /********/
+span.hr_name {
+    position: absolute;
+    z-index: 9999;
+    color: #000;
+    margin-top: 304px;
+    font-size: 16px;
+    margin-left: 45px;
+	font-weight: bold;	
+	   text-transform: capitalize;
+}	
+span.hr_age {
+    position: absolute;
+    z-index: 9999;
+    color: #000;
+    margin-top: 337px;
+    font-size: 16px;
+    margin-left: 227px;
+    font-weight: bold;
+}		
+  
+  span.hr_gam {
+    position: absolute;
+    margin-top: 335px;
+    color: #000;
+    margin-left: 48px;
+    font-size: 16px;
+	font-weight: bold;
+   text-transform: capitalize;
+}
+ span.hr_date {
+    position: absolute;
+    margin-top: 369px;
+    margin-left: 51px;
+	color: #000;
+    font-size: 16px;
+	font-weight: bold;
+    text-transform: capitalize;
+}
+  
+  div#photo_hr>img {
+    height: 135px;
+    width: 134px;
+}	
+div#photo_hr {
+    position: absolute;
+    margin-top: 148px;
+    margin-left: 81px;
+}	
+
+#hr_canvas_img{
+	/*display:none;*/				
+	
+}

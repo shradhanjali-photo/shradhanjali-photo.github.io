@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>22gtbs.com</title>
+
+    <link rel="stylesheet" href="hr_css/bootstrap.min.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="hr_css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="hr_css/creative.css" type="text/css">
+
+
+<script src="hr_js/jquery.min.js"></script>
+<script src="hr_js/html2canvas.js"></script>
+<script src="hr_js/jquery_hr.js"></script>
+<script type="text/javascript" src="hr_js/imagepreview.js"></script>
+<link href="hr_css/style_hr.css" rel="stylesheet">
+<style>
+
+</style>
+
+		
+</head>			
+<body>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">Welcome To 22gtbs.COM</a>
+            </div>
+ </div>
+    </nav>
+	
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<div class="row">
+				<div class="col-md-12">
+				
+				<form action="" method="post" >
+					<div class="form-group col-md-12">
+						<a href="sradhanjali.html" id=""   class="btn btn-default btn-xl"> Shrdanjali(શ્રધાંજલી માટે ફોટો બનાવો)</a>
+					</div>
+				</form>
+				 
+					<div class="form-group col-md-12">
+						<a href="besnu.html"    class="btn btn-default btn-xl"> Besnu (બેસણા માટે ફોટો બનાવો) </a>
+					</div>
+ 
+     			</div>
+				</div>
+				</div>
+			</div>
+        </div>
+    </section>
+ <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">જાહેર સુચના</h2>
+                    <hr class="primary">
+                    <p>અનો કોઇએ દુરઉપયોગ કરવો નહી. આ વેબસાઈટ મૃત્યું ના સમાચાર ની માહિતી નો ફોટોગ્રાફ્સ બનાવા માટે ઉપયોગ કરવો. કોઈપણ પ્રકારની સલાહ માટે નીચે આપેલા નનંબર પર કોલ કરો.  </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>(+91) 999-8000-756</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@22gtbs.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>	
+<?php
+session_start();
+$counter_name = "counter.txt";
+// Check if a text file exists. If not create one and initialize it to zero.
+if (!file_exists($counter_name)) {
+  $f = fopen($counter_name, "w");
+  fwrite($f,"0");
+  fclose($f);
+}
+// Read the current value of our counter file
+$f = fopen($counter_name,"r");
+$counterVal = fread($f, filesize($counter_name));
+fclose($f);
+// Has visitor been counted in this session?
+// If not, increase counter value by one
+if(!isset($_SESSION['hasVisited'])){
+  $_SESSION['hasVisited']="yes";
+  $counterVal++;
+  $f = fopen($counter_name, "w");
+  fwrite($f, $counterVal);
+  fclose($f); 
+}
+echo "<p class='counter_tag'>$counterVal</p>";
+?>
+</body>
+</html>
