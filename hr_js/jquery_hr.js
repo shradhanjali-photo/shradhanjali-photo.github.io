@@ -39,11 +39,17 @@
 		
 	 	 }); */
 		
-		 html2canvas($("#widget"), {
+		/* html2canvas($("#widget"), {
       onrendered: function(canvas) {
         saveAs(canvas.toDataURL(), 'shiv.png');
       }
-    });	
+    });	*/
+			
+			html2canvas(document.querySelector("#widget")).then(canvas => {
+     saveAs(canvas.toDataURL(), 'mahadev.png');
+});
+			
+			
           });  
 		
 		
