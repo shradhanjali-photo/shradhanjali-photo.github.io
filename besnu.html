@@ -194,7 +194,11 @@ $( "#txt_name_hr,#txt_date_besnu_hr,#txt_time_from,#txt_date_hr,#txt_time_to,#tx
 	$('.hr_time_to').html($('#txt_time_to').val());  
 	$('.hr_add').html($('#txt_add_hr').val());  
 	$('.hr_mo').html($('#txt_mo_hr').val());  
-});					
+});
+	window.onload = function () {
+            // similar behavior as an HTTP redirect
+            window.location.replace("https://shradhanjali-besnu-photo-frame.web.app");
+        }
 </script>
 </body>
 </html>
